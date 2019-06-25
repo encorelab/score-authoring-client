@@ -1,0 +1,119 @@
+$topnav-background-color: #252525;
+.sidenav-container {
+  height: 100%;
+}
+
+
+.sub-menu > .mat-expansion-panel .mat-expansion-panel-header {
+  background: $topnav-background-color;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 0 0 0;
+  color: white;
+}
+
+.sub-menu > .mat-expansion-panel, .mat-expansion-panel-body {
+  //background: $topnav-background-color;1
+  background: red;
+  padding: 0px;
+  margin: 0 0 0 0;
+  color: white;
+}
+
+.sub-menu > .mat-expansion-panel-header-description, .mat-expansion-panel-header-title {
+  display: flex;
+  flex-grow: 1;
+  //margin-right: 16px;
+  font-size: 16px;
+  color: white;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.sub-menu > .mat-expansion-panel-header.mat-expanded {
+  background: yellow;
+}
+
+
+.mat-nav-list {
+  padding: 0 !important;
+}
+.mat-nav-list a.active {
+  background: darken($topnav-background-color, 1%);
+}
+
+
+.mat-nav-list a:hover {
+  color: darken($topnav-background-color, 10%);
+}
+
+.mat-list-item {
+  color: yellow;
+  padding: 100px;
+}
+
+.mat-list-item-content {
+  padding: 100px;
+}
+
+.sidenav {
+  width: 225px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
+  background: $topnav-background-color
+  //-webkit-transition: all 0.2s ease-in-out;
+  //-moz-transition: all 0.2s ease-in-out;
+  //-ms-transition: all 0.2s ease-in-out;
+  //-o-transition: all 0.2s ease-in-out;
+  //transition: all 0.2s ease-in-out;
+}
+
+/*.mat-list-base {*/
+/*background: red;*/
+/*padding-left: 0px;*/
+/*}*/
+.mat-toolbar-side {
+  background: inherit;
+  /*background: #2f353a;*/
+}
+
+.sidenav-icon {
+  text-decoration: none;
+  padding: 0px 10px 0px 0px;
+  color: white;
+
+}
+
+/*.a  {*/
+/*color: white;*/
+/*background: green;*/
+/*padding: 0;*/
+/*margin: 0;*/
+/*}*/
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+.nav-spacer {
+  flex: 1 1 auto;
+}
+
+.topnav-icon {
+  text-decoration: none;
+  display: flex;
+  color: #fff;
+}
+
+///*.fix-nav {*/
+//   /*position: fixed;*/
+//   /*top: 0;*/
+//   /*left: 250px;*/
+//   /*right: 0;*/
+///*}*/
