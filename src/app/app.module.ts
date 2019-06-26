@@ -31,12 +31,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainNavComponent } from './navigation/main-nav/main-nav.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { LaneCanvasComponent } from './canvas/lane-canvas/lane-canvas.component';
+import { MainCanvasComponent } from './canvas/main-canvas/main-canvas.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
-    DashboardComponent
+    DashboardComponent,
+    LaneCanvasComponent,
+    MainCanvasComponent
   ],
   imports: [
     BrowserModule,
@@ -69,6 +75,8 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
     MatSortModule,
     MatPaginatorModule,
     MatToolbarModule,
+    FlexLayoutModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

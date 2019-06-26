@@ -1,0 +1,7 @@
+<p>{{laneType}}</p>
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let step of steps" cdkDrag>
+    <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+    {{step}}
+  </div>
+</div>

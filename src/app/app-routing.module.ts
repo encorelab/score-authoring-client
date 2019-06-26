@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {MainNavComponent} from './navigation/main-nav/main-nav.component';
-import {DashboardComponent} from './dashboard/dashboard/dashboard.component';
+import {MainCanvasComponent} from './canvas/main-canvas/main-canvas.component';
 
 const routes: Routes = [
 
 
   {
     path: 'main-nav', component: MainNavComponent, children: [
-      {path: '', component: DashboardComponent},
-      {path: 'dashboard', component: DashboardComponent} ]
+      {path: '', component: MainCanvasComponent},
+      {path: 'dashboard', component: MainCanvasComponent} ]
   },
   {
     path: '', component: MainNavComponent, children: [
-      {path: '', component: DashboardComponent},
-      {path: 'dashboard', component: DashboardComponent} ]
+      {path: '', component: MainCanvasComponent},
+      {path: 'dashboard', component: MainCanvasComponent} ]
   },
 ];
 @NgModule({
